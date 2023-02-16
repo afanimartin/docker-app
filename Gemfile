@@ -7,8 +7,6 @@ gem "rails", "~> 7.0.4", ">= 7.0.4.2"
 
 gem "sprockets-rails"
 
-gem "pg"
-
 gem "mysql2"
 
 gem "puma", "~> 5.0"
