@@ -1,18 +1,14 @@
 default: &default
-  encoding: utf8
-  adapter: mysql2
-  database: dev
-  username: wj8a9k3cvqabgosbxnhy
-  host: aws-eu-west-2.connect.psdb.cloud
-  password: pscale_pw_79KDOqVvrOhMsoOghadBoWwxicoBd5wYhHVAdA7nkw0
-  ssl_mode: verify_identity
-  sslca: "/etc/ssl/certs/ca-certificates.crt"
+  encoding: unicode
+  adapter: sqlite3
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
 development:
   <<: *default
+  database: db/dev.sqlite
 
 production:
   <<: *default
+  database: db/prod.sqlite
 
