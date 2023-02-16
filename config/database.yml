@@ -1,18 +1,4 @@
 default: &default
-  encoding: unicode
-  adapter: postgresql
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  timeout: 5000
-
-development:
-  <<: *default
-  username: user_45cee60f5b86
-  password: AVNS_FU4QXU37P_ZrdX1Daet
-  database: db_5d90a414031e
-  host: private-dev-db-do-user-13580058-0.b.db.ondigitalocean.com:25060/db_5d90a414031e
-  sslmode: require
-
-production:
   encoding: utf8
   adapter: mysql2
   database: dev
@@ -21,4 +7,12 @@ production:
   password: pscale_pw_79KDOqVvrOhMsoOghadBoWwxicoBd5wYhHVAdA7nkw0
   ssl_mode: verify_identity
   sslca: "/etc/ssl/certs/ca-certificates.crt"
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+
+development:
+  <<: *default
+
+production:
+  <<: *default
 
