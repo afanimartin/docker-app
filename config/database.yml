@@ -13,8 +13,7 @@ development:
   sslmode: require
 
 production:
-  development:
-  <<: *default
+  encoding: utf8
   adapter: mysql2
   database: dev
   username: wj8a9k3cvqabgosbxnhy
