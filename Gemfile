@@ -9,6 +9,8 @@ gem "sprockets-rails"
 
 gem "pg"
 
+gem "mysql2"
+
 gem "puma", "~> 5.0"
 
 gem "importmap-rails"
