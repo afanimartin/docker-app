@@ -6,18 +6,14 @@ default: &default
 
 development:
   <<: *default
-  username: doadmin
-  password: AVNS_OWMH6imrzCthYk614w7
-  host: dev-db-do-user-13580058-0.b.db.ondigitalocean.com
-  port: 25060
+  username: user_45cee60f5b86
+  password: AVNS_FU4QXU37P_ZrdX1Daet
   database: db_5d90a414031e
   sslmode: require
 
 production:
   <<: *default
-  username: doadmin
-  password: AVNS_OWMH6imrzCthYk614w7
-  host: dev-db-do-user-13580058-0.b.db.ondigitalocean.com
-  port: 25060
+  username: user_45cee60f5b86
+  password: AVNS_FU4QXU37P_ZrdX1Daet
   database: db_5d90a414031e
   sslmode: require
